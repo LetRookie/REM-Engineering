@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,500&family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgb(255, 255, 255) 8%, rgb(131, 131, 184) 25%, rgba(6,79,167,1) 51%, rgba(0,212,255,1) 92%); 
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    background-color: rgba(202, 244, 251,0.8);
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    border: 5px solid  #4074b5;
+    padding-bottom: 0.2em;
+}
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: wheat;
+    text-shadow: 0px 0px 0 rgb(237,175,0),
+    1px 0px 0 rgb(219,157,0),
+    2px 0px 0 rgb(201,139,0),
+    3px 0px 0 rgb(184,122,0),
+    4px 0px 0 rgb(166,104,0),
+    5px 0px 0 rgb(148,86,0),
+    6px 0px 0 rgb(130,68,0),
+    7px 0px  0 rgb(112,50,0),
+    8px 0px 7px rgba(0,0,0,0.37),
+    8px 0px 1px rgba(0,0,0,0.5),
+    0px 0px 7px rgba(0,0,0,.2);
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+    padding-top: 1em;
+}
+
+header nav li {
+    display: block;
+    font-size: larger;
+}
+
+header li a {
+    display: block;
+    text-decoration: none;
+    color: #4074b5;
+    border-radius: 0.8em;
+    padding: 0.5em;
+}
+
+header li a:hover {
+    background: #4074b5;
+    color: aliceblue;
+}
+
+main {
+    background-image: url(./images/glavna_rem.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 1.5em;
+    margin:2em 0 2em 0;
+    gap: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+.resume {
+    margin-bottom: 2em;
+    background: #4074b5;
+    color: #FFF;
+    padding: 2em 5em;
+    font-size: 20px;
+    border-radius: 5em;
+}
+.cover-wrapper {
+    background-color: blue;
+    color: white;
+}
+
+.cover-wrapper a {
+    color: white;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 2em
+}
+
+.side-bar {
+    border-radius: 1.5em;
+    background:#FFF;
+    min-width: 350px;
+    max-height: 650px;
+    padding: 2em;
+    line-height: 2em;
+    margin: 1.4em 0 0 1.2em;
+}
+.side-bar p {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 1.2em;
+    border-bottom: 2px double #444;
+    margin-bottom: 0.5em;
+}
+
+.side-bar li,
+.side-bar a {
+    display: block;
+    text-decoration: none;
+    color: #4074b5;
+    border-radius: 0.3em;
+    padding: 0 0.2em 0 0.8em;
+}
+
+.side-bar a:hover {
+    background: #4074b5;
+    color: #FFF;
+}
+
+.card-list {
+    /* border:2px solid yellow; */
+    padding-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    color: #444;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    color: #4074b5;
+    background: rgb(255, 255, 255);
+}
+
+.card p {
+    font-size: 1.5em;
+}
+.card a {
+    text-decoration: none;
+    color: #444;
+}
+.card img {
+    display: block;
+    padding: 0.8em;
+    border-radius: 1.3em;
+    width: 100%;
+    height: 50%;
+    object-fit: fill;
+}
+
+.site-footer {
+    background: #000;
+    margin-top: 1em;
+    padding: 1.2em;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+#vik {
+    gap: 2em;
+    justify-content: flex-start;
+}
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15em;
+}
+
+.card-img img {
+    border: 2px solid black;
+    border-radius: 1.5em;
+    display: block;
+    width: 350px;
+    height :auto;
+}
+
+.card-desc table, th, td {
+    border: 2px solid black;
+    padding: 0.5em;
+}
+
+.card-desc table {
+    border-radius: 1.5em;
+}
+
+.card-desc th, td {
+    text-align: center;
+}
